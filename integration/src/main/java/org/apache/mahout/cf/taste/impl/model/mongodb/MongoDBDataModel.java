@@ -102,7 +102,7 @@ import java.util.regex.Pattern;
  */
 public final class MongoDBDataModel implements DataModel {
 
-  private static final Logger log = LoggerFactory.getLogger(MongoDBDataModel.class);
+	private static final Logger log = LoggerFactory.getLogger(MongoDBDataModel.class);
 
   /** Default MongoDB host. Default: localhost */
   private static final String DEFAULT_MONGO_HOST = "localhost";

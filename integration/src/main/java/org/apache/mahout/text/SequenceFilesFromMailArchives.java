@@ -62,18 +62,18 @@ public final class SequenceFilesFromMailArchives extends AbstractJob {
 
   private static final Logger log = LoggerFactory.getLogger(SequenceFilesFromMailArchives.class);
 
-  public static final String[] CHUNK_SIZE_OPTION     = {"chunkSize", "chunk"};
-  public static final String[] KEY_PREFIX_OPTION     = {"keyPrefix", "prefix"};
-  public static final String[] CHARSET_OPTION        = {"charset", "c"};
-  public static final String[] SUBJECT_OPTION        = {"subject", "s"};
-  public static final String[] TO_OPTION             = {"to", "to"};
-  public static final String[] FROM_OPTION           = {"from", "from"};
-  public static final String[] REFERENCES_OPTION     = {"references", "refs"};
-  public static final String[] BODY_OPTION           = {"body", "b"};
-  public static final String[] STRIP_QUOTED_OPTION   = {"stripQuoted", "q"};
-  public static final String[] QUOTED_REGEX_OPTION   = {"quotedRegex", "regex"};
-  public static final String[] SEPARATOR_OPTION      = {"separator", "sep"};
-  public static final String[] BODY_SEPARATOR_OPTION = {"bodySeparator", "bodySep"};
+  protected static final String[] CHUNK_SIZE_OPTION     = {"chunkSize", "chunk"};
+  protected static final String[] KEY_PREFIX_OPTION     = {"keyPrefix", "prefix"};
+  protected static final String[] CHARSET_OPTION        = {"charset", "c"};
+  protected static final String[] SUBJECT_OPTION        = {"subject", "s"};
+  protected static final String[] TO_OPTION             = {"to", "to"};
+  protected static final String[] FROM_OPTION           = {"from", "from"};
+  protected static final String[] REFERENCES_OPTION     = {"references", "refs"};
+  protected static final String[] BODY_OPTION           = {"body", "b"};
+  protected static final String[] STRIP_QUOTED_OPTION   = {"stripQuoted", "q"};
+  protected static final String[] QUOTED_REGEX_OPTION   = {"quotedRegex", "regex"};
+  protected static final String[] SEPARATOR_OPTION      = {"separator", "sep"};
+  protected static final String[] BODY_SEPARATOR_OPTION = {"bodySeparator", "bodySep"};
   public static final String BASE_INPUT_PATH         = "baseinputpath";
 
   private static final int MAX_JOB_SPLIT_LOCATIONS = 1000000;
