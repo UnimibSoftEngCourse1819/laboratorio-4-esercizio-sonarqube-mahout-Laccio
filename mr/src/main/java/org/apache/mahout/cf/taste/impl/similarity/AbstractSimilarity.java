@@ -278,7 +278,7 @@ abstract class AbstractSimilarity extends AbstractItemSimilarity implements User
     }
 
     double result;
-    if (centerData) {
+    if (centerData && n != 0) {
       // See comments above on these computations
       double n = (double) count;
       double meanX = sumX / n;
