@@ -23,6 +23,7 @@ import java.util.concurrent.TimeUnit;
 import org.apache.mahout.common.RandomUtils;
 import org.apache.mahout.common.TimingStatistics;
 import org.apache.mahout.math.Vector;
+import java.util.logging.Logger;
 
 import com.google.common.base.Function;
 
@@ -105,7 +106,8 @@ public final class BenchmarkRunner {
       }
     }
     // print result to prevent hotspot from eliminating deadcode
-    System.err.println("Result = " + result);
+    final Logger LOGGER = Logger.getLogger(BenchmarkRunner.class.getName());;
+    LOGGER.info("Result = " + result);
     return stats;
   }
 }
